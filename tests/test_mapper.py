@@ -9,33 +9,44 @@ class TestMapper(unittest.TestCase):
     def setUp(self):
         # Create sample raw data
         self.raw_file = "test_raw.csv"
-        raw_data = pd.DataFrame({"id": [1, 2, 2, 3]})
+        raw_data = pd.DataFrame({
+            "lookup_key": [1, 2, 2, 3]
+        })
         raw_data.to_csv(self.raw_file, index=False)
 
         # Create sample reference data
         self.ref_file = "test_reference.xlsx"
         ref_data = pd.DataFrame({
             "lookup_key": [1, 2, 3, 4],
-            "name": ["A", "B", "C", "D"]
+            "name": ["A", "B", "C", "D"],
+            "date_added": ["2024-01-01", "2024-02-01", "2024-03-01", "2024-04-01"]
         })
         ref_data.to_excel(self.ref_file, index=False)
 
-        self.output_file = "test_output.csv"
+    def test_mapping_success(self):
+        summary = map_data(self.raw_file, self.ref_file, "test_output")
 
-    def test_mapping(self):
-        result = map_data(self.raw_file, self.ref_file, self.output_file)
+        self.assertEqual(summary["matched_records"], 3)
+        self.assertEqual(summary["unmatched_records"], 0)
+        self.assertTrue(os.path.exists(summary["matched_output_file"]))
+        self.assertTrue(os.path.exists(summary["unmatched_output_file"]))
 
-        # Check duplicates removed
-        self.assertEqual(len(result), 3)
+    def test_missing_lookup_column(self):
+        bad_ref = "bad_reference.xlsx"
+        pd.DataFrame({"wrong_column": [1, 2, 3]}).to_excel(bad_ref, index=False)
 
-        # Check file created
-        self.assertTrue(os.path.exists(self.output_file))
+        with self.assertRaises(ValueError):
+            map_data(self.raw_file, bad_ref, "out")
+
+        os.remove(bad_ref)
 
     def tearDown(self):
-        # Clean up test files
-        os.remove(self.raw_file)
-        os.remove(self.ref_file)
-        os.remove(self.output_file)
+        for file in os.listdir():
+            if file.startswith("test_") or file.startswith("unmatched_"):
+                try:
+                    os.remove(file)
+                except:
+                    pass
 
 
 if __name__ == "__main__":

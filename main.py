@@ -2,11 +2,12 @@ from src.mapper import map_data
 
 
 if __name__ == "__main__":
-    raw_file = "data/raw_data.csv"
-    reference_file = "data/reference_data.xlsx"
-    output_file = "mapped_output.csv"
+    summary = map_data(
+        "data/raw_data.csv",
+        "data/reference_data.xlsx",
+        "mapped_output"
+    )
 
-    result = map_data(raw_file, reference_file, output_file)
-
-    print("Mapping completed successfully!")
-    print(f"Number of matched rows: {len(result)}")
+    print("\n===== SUMMARY REPORT =====")
+    for key, value in summary.items():
+        print(f"{key}: {value}")
