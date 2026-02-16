@@ -1,0 +1,14 @@
+2026-02-16 12:39:53,644 - INFO - ========== STARTING DATA MAPPING ==========
+2026-02-16 12:39:53,646 - INFO - Loading raw data...
+2026-02-16 12:39:53,691 - INFO - Loading reference data...
+2026-02-16 12:39:54,873 - INFO - Total raw records: 100
+2026-02-16 12:39:54,873 - INFO - Unique lookup keys: 100
+2026-02-16 12:39:54,873 - INFO - Duplicate lookup keys in raw: 0
+2026-02-16 12:39:54,873 - INFO - Duplicate lookup keys in reference: 11
+2026-02-16 12:39:54,873 - INFO - Null lookup keys in raw: 0
+2026-02-16 12:39:54,873 - INFO - Null lookup keys in reference: 0
+2026-02-16 12:39:54,879 - INFO - Matched records: 100
+2026-02-16 12:39:54,879 - INFO - Unmatched records: 0
+2026-02-16 12:39:54,888 - INFO - Matched output file created: mapped_output_20260216_123954.csv
+2026-02-16 12:39:54,888 - INFO - Unmatched output file created: unmatched_20260216_123954.csv
+2026-02-16 12:39:54,888 - INFO - ========== DATA MAPPING COMPLETED ==========

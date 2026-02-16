@@ -8,6 +8,4 @@ if __name__ == "__main__":
         "mapped_output"
     )
 
-    print("\n===== SUMMARY REPORT =====")
-    for key, value in summary.items():
-        print(f"{key}: {value}")
+   

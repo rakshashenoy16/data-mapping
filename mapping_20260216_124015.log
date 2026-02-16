@@ -1,0 +1,60 @@
+2026-02-16 12:40:16,262 - INFO - ========== STARTING DATA MAPPING ==========
+2026-02-16 12:40:16,263 - INFO - Loading raw data...
+2026-02-16 12:40:16,270 - INFO - Loading reference data...
+2026-02-16 12:40:16,329 - INFO - Total raw records: 0
+2026-02-16 12:40:16,329 - INFO - Unique lookup keys: 0
+2026-02-16 12:40:16,329 - INFO - Duplicate lookup keys in raw: 0
+2026-02-16 12:40:16,329 - INFO - Duplicate lookup keys in reference: 0
+2026-02-16 12:40:16,329 - INFO - Null lookup keys in raw: 0
+2026-02-16 12:40:16,329 - INFO - Null lookup keys in reference: 0
+2026-02-16 12:40:16,330 - INFO - Matched records: 0
+2026-02-16 12:40:16,331 - INFO - Unmatched records: 0
+2026-02-16 12:40:16,334 - INFO - Matched output file created: test_output_20260216_124016.csv
+2026-02-16 12:40:16,334 - INFO - Unmatched output file created: unmatched_20260216_124016.csv
+2026-02-16 12:40:16,334 - INFO - ========== DATA MAPPING COMPLETED ==========
+2026-02-16 12:40:16,363 - INFO - ========== STARTING DATA MAPPING ==========
+2026-02-16 12:40:16,363 - INFO - Loading raw data...
+2026-02-16 12:40:16,368 - INFO - Loading reference data...
+2026-02-16 12:40:16,381 - INFO - Total raw records: 4
+2026-02-16 12:40:16,381 - INFO - Unique lookup keys: 3
+2026-02-16 12:40:16,381 - INFO - Duplicate lookup keys in raw: 1
+2026-02-16 12:40:16,382 - INFO - Duplicate lookup keys in reference: 0
+2026-02-16 12:40:16,382 - INFO - Null lookup keys in raw: 0
+2026-02-16 12:40:16,382 - INFO - Null lookup keys in reference: 0
+2026-02-16 12:40:16,383 - INFO - Matched records: 3
+2026-02-16 12:40:16,383 - INFO - Unmatched records: 0
+2026-02-16 12:40:16,386 - INFO - Matched output file created: test_output_20260216_124016.csv
+2026-02-16 12:40:16,386 - INFO - Unmatched output file created: unmatched_20260216_124016.csv
+2026-02-16 12:40:16,386 - INFO - ========== DATA MAPPING COMPLETED ==========
+2026-02-16 12:40:16,413 - INFO - ========== STARTING DATA MAPPING ==========
+2026-02-16 12:40:16,413 - INFO - Loading raw data...
+2026-02-16 12:40:16,413 - INFO - Loading reference data...
+2026-02-16 12:40:16,414 - INFO - Total raw records: 2
+2026-02-16 12:40:16,414 - INFO - Unique lookup keys: 2
+2026-02-16 12:40:16,414 - INFO - Duplicate lookup keys in raw: 0
+2026-02-16 12:40:16,415 - INFO - Duplicate lookup keys in reference: 0
+2026-02-16 12:40:16,415 - INFO - Null lookup keys in raw: 0
+2026-02-16 12:40:16,415 - INFO - Null lookup keys in reference: 0
+2026-02-16 12:40:16,415 - INFO - Matched records: 2
+2026-02-16 12:40:16,416 - INFO - Unmatched records: 0
+2026-02-16 12:40:16,419 - INFO - Matched output file created: test_output_20260216_124016.csv
+2026-02-16 12:40:16,419 - INFO - Unmatched output file created: unmatched_20260216_124016.csv
+2026-02-16 12:40:16,420 - INFO - ========== DATA MAPPING COMPLETED ==========
+2026-02-16 12:40:16,462 - INFO - ========== STARTING DATA MAPPING ==========
+2026-02-16 12:40:16,463 - INFO - Loading raw data...
+2026-02-16 12:40:16,471 - INFO - Loading reference data...
+2026-02-16 12:40:16,523 - ERROR - lookup_key column missing in reference data
+2026-02-16 12:40:16,573 - INFO - ========== STARTING DATA MAPPING ==========
+2026-02-16 12:40:16,574 - INFO - Loading raw data...
+2026-02-16 12:40:16,582 - INFO - Loading reference data...
+2026-02-16 12:40:16,608 - INFO - Total raw records: 2
+2026-02-16 12:40:16,608 - INFO - Unique lookup keys: 2
+2026-02-16 12:40:16,608 - INFO - Duplicate lookup keys in raw: 0
+2026-02-16 12:40:16,609 - INFO - Duplicate lookup keys in reference: 0
+2026-02-16 12:40:16,609 - INFO - Null lookup keys in raw: 0
+2026-02-16 12:40:16,609 - INFO - Null lookup keys in reference: 0
+2026-02-16 12:40:16,611 - INFO - Matched records: 1
+2026-02-16 12:40:16,611 - INFO - Unmatched records: 1
+2026-02-16 12:40:16,617 - INFO - Matched output file created: test_output_20260216_124016.csv
+2026-02-16 12:40:16,617 - INFO - Unmatched output file created: unmatched_20260216_124016.csv
+2026-02-16 12:40:16,620 - INFO - ========== DATA MAPPING COMPLETED ==========
